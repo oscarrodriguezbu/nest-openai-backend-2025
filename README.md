@@ -11,18 +11,18 @@ IMPORTANTE: Node-API v9 compatible runtime e.g. Node.js ^18.17.0 or >=20.3.0.
 
 ## Se usa el modelo gpt-4o-mini para aprovechar al maximo los 5 USD, PUEDE QUE LAS RESPUESTAS NO SEAN MUY BUENAS
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots1.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/openai-backend/blob/main/Notas/screenshoots/screenshoots1.png?raw=true" alt="Dashboard Screenshot">
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots2.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/nest-openai-backend/blob/main/Notas/screenshoots/screenshoots2.png?raw=true" alt="Dashboard Screenshot">
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots3.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/nest-openai-backend/blob/main/Notas/screenshoots/screenshoots3.png?raw=true" alt="Dashboard Screenshot">
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots4.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/nest-openai-backend/blob/main/Notas/screenshoots/screenshoots4.png?raw=true" alt="Dashboard Screenshot">
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots5.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/nest-openai-backend/blob/main/Notas/screenshoots/screenshoots5.png?raw=true" alt="Dashboard Screenshot">
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots6.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/nest-openai-backend/blob/main/Notas/screenshoots/screenshoots6.png?raw=true" alt="Dashboard Screenshot">
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots7.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/nest-openai-backend/blob/main/Notas/screenshoots/screenshoots7.png?raw=true" alt="Dashboard Screenshot">
 
-<img src="https://github.com/oscarrodriguezbu/nest-openai-backend-2025/blob/main/Notas/screenshoots/screenshoots8.png?raw=true" alt="Dashboard Screenshot">
+<img src="https://github.com/oscarrodriguezbu/nest-openai-backend/blob/main/Notas/screenshoots/screenshoots8.png?raw=true" alt="Dashboard Screenshot">
