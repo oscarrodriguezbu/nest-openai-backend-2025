@@ -1,0 +1,103 @@
+DUDAS RESUELTAS PRECIOS OPENAI 02/08/2025
+
+https://openai.com/es-ES/api/pricing/ no entiendo los precios, compré 5 usd, necesito generar texto, audio e imagens, me alcanza?
+
+openai.com
+Calculadora de precios de OpenAI - API
+ChatGPT Plus
+¡Hola! Entiendo que has adquirido $5 USD en créditos para utilizar la API de OpenAI y deseas generar texto, audio e imágenes. A continuación, te proporciono un resumen de los costos actuales para cada tipo de contenido, basado en la información más reciente disponible:
+
+📝 Generación de Texto
+Modelo GPT-4o:
+
+Entrada (input tokens): $2.50 por cada 1 millón de tokens.
+
+Salida (output tokens): $10.00 por cada 1 millón de tokens.
+OpenAI
++4
+OpenAI
++4
+Holori
++4
+
+Modelo GPT-4o Mini (más económico):
+
+Entrada: $0.15 por cada 1 millón de tokens.
+
+Salida: $0.60 por cada 1 millón de tokens.
+
+Para que te hagas una idea, 1 millón de tokens equivalen aproximadamente a 750,000 palabras. Con $5 USD, podrías generar una gran cantidad de texto, especialmente si utilizas el modelo GPT-4o Mini.
+Comunidad OpenAI
++4
+Reuters
++4
+Themeisle
++4
+
+🎧 Procesamiento de Audio
+Transcripción de audio a texto (Whisper):
+
+$0.006 por minuto de audio.
+Google Cloud
++8
+Distillery
++8
+apidog
++8
+
+Conversión de texto a voz (TTS):
+
+$0.015 por cada 1,000 caracteres.
+withorb.com
++2
+Distillery
++2
+Holori
++2
+
+Con $5 USD, podrías transcribir aproximadamente 833 minutos de audio o convertir alrededor de 333,333 caracteres de texto a voz.
+
+🖼️ Generación de Imágenes
+Costo por imagen generada:
+
+Baja resolución (1024x1024): ~$0.01 por imagen.
+
+Media resolución: ~$0.04 por imagen.
+
+Alta resolución: ~$0.17 por imagen.
+Reddit
++2
+Fozzels.com
++2
+OpenAI
++2
+OpenAI
++1
+Fozzels.com
++1
+
+Con $5 USD, podrías generar aproximadamente:
+
+500 imágenes de baja resolución.
+
+125 imágenes de media resolución.
+
+29 imágenes de alta resolución.
+Comunidad OpenAI
+
+✅ Conclusión
+Sí, con $5 USD puedes realizar una cantidad significativa de tareas utilizando la API de OpenAI:
+
+Generar una gran cantidad de texto, especialmente si optas por modelos más económicos como GPT-4o Mini.
+
+Procesar horas de audio, ya sea transcribiéndolo o convirtiéndolo a voz.
+
+Crear decenas o incluso cientos de imágenes, dependiendo de la resolución deseada.
+Holori
++2
+Reuters
++2
+Themeisle
++2
+
+Te recomiendo monitorear tu uso a través del panel de control de OpenAI para asegurarte de no exceder tu presupuesto. Si necesitas ayuda adicional o tienes más preguntas, ¡no dudes en consultarme!

@@ -1,0 +1,177 @@
+OpenAI: REACT + NESTJS
+Backend
+
+
+----------------------------------------
+Seccion 3 Ortografia:
+Nuestro primer prompt a OpenAI
+
+Role de system y usuario
+
+DTOs
+
+Servicios
+
+Controladores
+
+Casos de uso
+
+Validaciones
+
+Tokens
+
+Temperatura
+
+JsonParser
+
+
+Notas:
+- Ahora se usa GPT4.0 o (Nota de actualizacion del curso)
+- Controlador se encarga de recibir la data y devolver una respuesta
+- El servicio es un lugar mediante inyecciones de dependencias, es un lugar centralizado para mantener la información. En nuestra app solo va a llamar casos de uso (codigo reutlizable sin importar el framework)
+- DTOS ES DATA TRANSFER OBJECT es una clase que sirve para transferir info de un lugar a otro y que la data cumpla esas condiciones
+- yarn add class-validator class-transformer, luego hacer configuracion global de pipes para vigilar los endpoints
+- Se colocan decoradores en los dtos para validar el tipo de data
+- Se pueden hacer validaciones practicamente con el dto
+- Login en https://platform.openai.com/docs/overview clic en engranaje, api key
+- crear api key:
+   nest-gpt
+   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
+- openai daba 5 usd de consumo gratis del api PERO AHORA TOCA PAGAR
+- pegar el api key en un .env
+- instalar paquetes de variables de entorno 
+- configurar app module
+- usar la variable por ejemplo en use case
+- Mas info de openai  https://platform.openai.com/docs/quickstart?api-mode=responses
+- instalar paquete de openai
+- configurar openai en los servicios
+- hacer uso en los casos de uso y configurar el modelo mas reciente, puede ser necesario actualizar el paquete de openai
+- Agregar role y content al modelo para que responda a lo que queremos y como queremos
+- 
+
+
+CHATGPT ME EXPLICA QUE PUEDO HACER CON 5 USD:
+con $5 USD puedes realizar una cantidad significativa de tareas utilizando la API de OpenAI:
+
+Generar una gran cantidad de texto, especialmente si optas por modelos más económicos como GPT-4o Mini.
+
+Procesar horas de audio, ya sea transcribiéndolo o convirtiéndolo a voz.
+
+Crear decenas o incluso cientos de imágenes, dependiendo de la resolución deseada.
+
+Te recomiendo monitorear tu uso a través del panel de control de OpenAI para asegurarte de no exceder tu presupuesto. Si necesitas ayuda adicional o tienes más preguntas, ¡no dudes en consultarme!
+https://openai.com/es-ES/api/pricing/
+
+----------------------------------------
+----------------------------------------
+Seccion 5 ProsCons Discusser Streams:
+OpenAI Stream
+
+For await
+
+Decoradores nuevos como
+
+@Res
+
+Chunks
+
+DTOs
+
+
+Notas:
+- Stream de información: Es en lugar de esperar a la respuesta completa, la info puede llegar mientras se va generando
+- para configuracion de stream agregar     @Res() res: Response, en el controlador y     stream: true, en el caso de uso
+- for await para el stream, si fuera solo una promesa seria solo await
+
+----------------------------------------
+----------------------------------------
+Seccion 7 Traducciones:
+Esta sección es un ejercicio similar, donde aprenderemos a realizar una consulta que nos permita traducir de un idioma a otro, sin importar cual sea.
+
+Notas:
+- 
+
+----------------------------------------
+----------------------------------------
+Seccion 9 Texto a Audio:
+En esta sección aprenderemos a utilizar le modelo 'TTS-1' y 'TTS-1-HD' para generar nuestro MP3s (u otros formatos de audio), el objetivo es enviar un texto y que OpenAI nos genere el audio.
+
+Puntualmente veremos:
+
+Generar audio en diferentes formatos
+
+Almacenar audio en el FileSystem del backend (En la vida real ustedes lo pueden colocar en otro storage)
+
+Creación de endpoint para obtener audios previamente generados
+
+Mensajes de error personalizados en Nest.
+
+
+Notas:
+- los archivos se van a generar y a guarar en la carpeta generated y esta tiene un archivo .gitKeep para que esa carpeta la guarda git en el repo si está vacia o no
+- Normalmente esos archivos se guardan en un servicio de terceros, no en el backend
+- 
+
+----------------------------------------
+----------------------------------------
+Seccion 11 Audio a texto:
+En esta sección trabajaremos cargando un audio, y generar:
+
+Transcripciones
+
+Subtítulos en varios formatos
+
+Crear el archivo en filesystem
+
+
+
+Este ejercicio se presta para muchas cosas, una de ellas es un analizador de minutas de reuniones (super genial) o un programa para analizar los puntos clave del audio, o bien un programa generador de subtítulos
+
+
+Notas:
+- UseInterceptors y FileInterceptor vienen de Nest
+- pipes en Nest permiten hacer una transformacion. como en angular
+- El audio debe estar en el mismo language que se configure en el modelo
+
+----------------------------------------
+----------------------------------------
+Seccion 13 Generacion y edicion de imagenes:
+En esta sección nos enfocaremos en 3 puntos principales
+
+Generación de imágenes basados en prompts
+
+Editar partes de la imagen basado en mascaras
+
+Generar variaciones.
+
+Para realizar este trabajo estaremos trabajando con los urls de las imágenes para descargarlas en nuestro servidor y así poder mandar el stream de información solicitado por OpenAI.
+
+Recuerden que nada les impide, borrar las imágenes una vez usadas o mandar los buffers de información en lugar de crear un archivo.
+
+
+Notas:
+- Se usa el modelo dall-e-3
+- Se genera la imagen en url, luego se transforma a png, la url es temporal y toca guardar esa imagen antes que desaparezca 
+- El png es para que luego se pueda editar la imagen, toca que tenga transparencia y toca usar un paquete especial para eso
+- en el curso usan el dall-e-2 //dall-e-3 lo recomienda el profe fernando pero tiene muchas limitaciones //gpt image lo recomienda actualment la pagina de openAI
+- Al final he usado dall e 2 y dall e 3 tal cual como estan en los videos de la clase. Para generar la variaciones de las imagenes no se puede usar dall e 3 y por eso salen feas las imagenes con dall e 2
+
+----------------------------------------
+----------------------------------------
+Seccion 15 Asistentes OpenAI:
+
+
+
+Notas:
+- 
+
+----------------------------------------
+----------------------------------------
+Seccion 17 Tareas adicionales:
+
+
+
+Notas:
+- 
+
+----------------------------------------

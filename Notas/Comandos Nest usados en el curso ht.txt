@@ -1,0 +1,20 @@
+Comandos Nest usados en el curso: https://docs.nestjs.com/
+- npm i -g @nestjs/cli para instalar
+- nest new project-name para crear nuevo proyecto
+
+
+- nest generate <comando>  para crear en este caso un restfull api, luego seleccionar no
+- npm i class-validator class-transformer son paquetes que sirven para validar clases
+- npm i @nestjs/config
+- npm i --save openai
+- npm i multer e instalar los tipos de typescript
+- npm i Sharp para convertir imágenes a png
+- 
+
+
+
+npm run start:dev para arrancar el proyecto
+
+
+
+
