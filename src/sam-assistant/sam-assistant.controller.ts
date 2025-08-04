@@ -4,9 +4,7 @@ import { QuestionDto } from './dtos/question.dto';
 
 @Controller('sam-assistant')
 export class SamAssistantController {
-  
-  constructor(private readonly samAssistantService: SamAssistantService) {}
-
+  constructor(private readonly samAssistantService: SamAssistantService) { }
 
   @Post('create-thread')
   async createThread() {
@@ -19,10 +17,4 @@ export class SamAssistantController {
   ) {
     return await this.samAssistantService.userQuestion(questionDto);
   }
-
-
-
-
-
-
 }

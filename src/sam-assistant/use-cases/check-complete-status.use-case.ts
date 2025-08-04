@@ -6,9 +6,7 @@ interface Options {
   runId: string;
 }
 
-
-export const checkCompleteStatusUseCase = async( openai: OpenAI, options: Options ) => {
-
+export const checkCompleteStatusUseCase = async (openai: OpenAI, options: Options) => {
   const { threadId, runId } = options;
 
   const runStatus = await openai.beta.threads.runs.retrieve(
@@ -16,15 +14,16 @@ export const checkCompleteStatusUseCase = async( openai: OpenAI, options: Option
     runId
   );
 
-  console.log({ status: runStatus.status}); // completed
+  console.log({ status: runStatus.status }); // completed
 
-  if ( runStatus.status === 'completed' ) {
+  if (runStatus.status === 'completed') {
     return runStatus;
   }
 
+  //? SE PUEDE MEJORAR LAS VALIDACIONES
+
   // Esperar un segundo
-  await new Promise( resolve => setTimeout( resolve, 1000 ) );
+  await new Promise(resolve => setTimeout(resolve, 1000));//ESPERAR UN SEGUNDO ANTES DE VOLVER A CONSULTAR
 
-  return await checkCompleteStatusUseCase( openai, options );
-
+  return await checkCompleteStatusUseCase(openai, options); //FUNCION RECURSIVA
 }

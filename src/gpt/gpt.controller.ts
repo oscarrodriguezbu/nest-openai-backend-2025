@@ -27,6 +27,7 @@ import {
   TranslateDto,
 } from './dtos';
 import { CustomAudioFileValidator } from './pipes/CustomAudioFileValidator.pipe';
+import { FileMimeTypePipe } from './pipes/FileMimeTypePipe';
 
 @Controller('gpt')
 export class GptController {
@@ -163,9 +164,10 @@ export class GptController {
             maxSize: 1000 * 1024 * 5,
             message: 'File is bigger than 5 mb ',
           }),
-          new FileTypeValidator({ fileType: 'image/*' }),
+          // new FileTypeValidator({ fileType: 'image/*' }),
         ],
       }),
+      new FileMimeTypePipe(['image/png', 'image/jpeg', 'image/jpg']) // 👈 Aquí usamos tu nuevo pipe
     )
     file: Express.Multer.File,
     @Body('prompt') prompt: string,

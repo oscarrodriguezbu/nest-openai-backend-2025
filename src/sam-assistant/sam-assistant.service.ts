@@ -11,24 +11,21 @@ export class SamAssistantService {
     apiKey: process.env.OPENAI_API_KEY,
   });
 
-
   async createThread() {
-    return await createThreadUseCase( this.openai );
+    return await createThreadUseCase(this.openai);
   }
 
-  async userQuestion( questionDto: QuestionDto ) {
+  async userQuestion(questionDto: QuestionDto) {
     const { threadId, question } = questionDto;
 
     const message = await createMessageUseCase(this.openai, { threadId, question });
-    
-    const run = await createRunUseCase( this.openai, { threadId } );
 
-    await checkCompleteStatusUseCase( this.openai, { runId: run.id, threadId: threadId } );
+    const run = await createRunUseCase(this.openai, { threadId });
+
+    await checkCompleteStatusUseCase(this.openai, { runId: run.id, threadId: threadId });
 
     const messages = await getMessageListUseCase(this.openai, { threadId });
 
     return messages;
   }
-
-
 }

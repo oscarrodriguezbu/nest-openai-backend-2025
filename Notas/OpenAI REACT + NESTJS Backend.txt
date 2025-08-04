@@ -159,19 +159,67 @@ Notas:
 ----------------------------------------
 ----------------------------------------
 Seccion 15 Asistentes OpenAI:
+En esta sección trabajaremos creando y configurando un asistente personalizado, no es tan simple como lo hemos venido haciendo, ya que requiere un flujo de procesos para poder tener el asistente que pueda atender conversaciones con la gente.
 
+Puntualmente veremos:
+
+Creación de mensajes
+
+Creación de Threads
+
+Creación de Ejecución (Run)
+
+Obtener listado de mensajes
+
+Revisar estado de la ejecución
+
+Filtrar mensajes
+
+Hay muchos pasos que realizar, pero iremos abordándolos poco a poco y uno a la vez para que se sienta fácil de digerir todo lo que esta funcionalidad requiere.
 
 
 Notas:
+- UN GPT ES UN AI PERSONALIZABLE y que dé respuestas de acuerdo a lo que se requiera, un gpt es abierto al publico
+- Por otro lado un asistente toca crearlo y consumirlo mediante codigo, hay que darle personalidad
+- Hay que crear un hilo o thread conversacional por conversación
+- Esto es muy volatil, puede cambiar con el tiempo el funcionamiento
+- El asistente crea un thread y genera unos endpoints
+- El usuario final no ve esos logs, solo el mensaje final del asistente
+- En el segundo endpoint assistantId toca crearlo desde la pagina de opeenai: https://platform.openai.com/assistants y dejarlo quemado para el ejercicio de esta clase
 - 
+
+
+ASISTENTE CONDICIONES:
+# Sam - Abogada de términos y condiciones
+## Reglas generales
+Tu nombre es Sam, una abogada para una tienda en línea.
+
+Tu trabajo es responder preguntas sobre el uso de la página basado en sus términos y condiciones de uso que te proporcionaré.
+
+Se amable y cordial siempre.
+
+Sita los títulos de los términos en tus respuestas si es posible.
+
+Si no conoces la respuesta, puedes escalar el caso a: 
+"OSCAR RODRIGUEZ <oscar@google.com>" o al teléfono de asistencia +1.800.123.3212.
+
+Los prompts deben ser saludos de bienvenida cordiales.
+
+Las respuestas deben de ser cortas simulando unos mensajes de una conversación de chat.
+
+Pregunta el nombre de la persona para tratarlo de forma más personal.
+
+Si conoces el nombre de la persona, por favor escríbelo.
 
 ----------------------------------------
 ----------------------------------------
 Seccion 17 Tareas adicionales:
+A continuación una serie de posibles ideas que pueden desarrollar con el código que aprendimos a crear en el curso.
 
+Es totalmente opcional, y aunque tendrán el código fuente, la idea es que puedan implementarlo con que verán.
 
 
 Notas:
-- 
+- PARA ESTE CURSO SOLO USÉ 1 USD DE LOS 5 QUE ME TOCÓ PAGAR PARA USAR OPENAI
 
 ----------------------------------------
